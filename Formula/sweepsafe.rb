@@ -8,21 +8,21 @@ class Sweepsafe < Formula
   # The formula's own source is the tiny npm launcher package (never run); the native binary comes
   # from the per-architecture npm package, declared as a resource because Homebrew does not allow
   # `url` inside on_arm/on_intel.
-  url "https://registry.npmjs.org/sweepsafe/-/sweepsafe-0.1.0-beta.1.tgz"
-  sha256 "7c277e23b5c3bc6eaafd643f259229cad22cae528e407ba311c49519373e4ba3"
+  url "https://registry.npmjs.org/sweepsafe/-/sweepsafe-0.1.0-beta.2.tgz"
+  sha256 "1c554e185b36b86e6b973d2bb59d12efa57eafd5762e69adc1497fc958e5d3d6"
   license "MIT"
 
   depends_on :macos
 
   resource "binary" do
     on_arm do
-      url "https://registry.npmjs.org/@adventures92/sweepsafe-darwin-arm64/-/sweepsafe-darwin-arm64-0.1.0-beta.1.tgz"
-      sha256 "2f05ae1aff387832cfbb0f445bc7608ad9959d6a7f42d386ec05d9214d340bdb"
+      url "https://registry.npmjs.org/@adventures92/sweepsafe-darwin-arm64/-/sweepsafe-darwin-arm64-0.1.0-beta.2.tgz"
+      sha256 "3f6da482e10c503fac8ade0598c2de8d14548d340fc6ef903b7bcd853dae9c19"
     end
 
     on_intel do
-      url "https://registry.npmjs.org/@adventures92/sweepsafe-darwin-x64/-/sweepsafe-darwin-x64-0.1.0-beta.1.tgz"
-      sha256 "5ba2b9478892b7d575fb7125beed6837f1a5a29f94f8e0b96c96acd8d0482cbb"
+      url "https://registry.npmjs.org/@adventures92/sweepsafe-darwin-x64/-/sweepsafe-darwin-x64-0.1.0-beta.2.tgz"
+      sha256 "3114d72279f6091b76287328dbff04f00e9604a59e00bc066584926768b852d3"
     end
   end
 
